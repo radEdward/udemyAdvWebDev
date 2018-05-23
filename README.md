@@ -1,3 +1,3 @@
 # udemyAdvWebDev
 
-Projects from the udemy course on advanced web development
+Projects from advanced web development course.
