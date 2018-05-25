@@ -1,0 +1,71 @@
+/*CONTAINERS HERE*/
+.outerBox {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+    display: flex;
+}
+.menuBar {
+    background-color: rgba(0, 150, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px;
+}
+.animationBox {
+    width: 90%;
+    animation-name: spaceBackground;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+span {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*STYLING ELEMENTS*/
+a {
+    font-size: 25px;
+    color: black;
+    font-family: "Lucida Console";
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+}
+a:hover {
+    color: lightgray;
+}
+.ship {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    width: 95px;
+    height: 95px;
+    background-image: url('galagaShip.png');
+    background-size: cover;
+}
+
+
+/*ANIMATIONS*/
+@keyframes spaceBackground {
+  0% {
+    background-image: url('space1.jpg');
+  }
+  33% {
+    background-image: url('space2.jpg');
+  }
+  66% {
+    background-image: url('space3.jpg');
+  }
+  100% {
+    background-image: url('space1.jpg');
+  }
+}
+@keyframes spaceShip {
+    
+}
