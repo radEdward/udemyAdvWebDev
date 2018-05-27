@@ -1,4 +1,9 @@
 /*CONTAINERS HERE*/
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
+}
 .outerBox {
     width: 100%;
     height: 100%;
@@ -7,16 +12,19 @@
     display: flex;
 }
 .menuBar {
-    background-color: rgba(0, 150, 0, 0.6);
+    background-color: rgba(0, 150, 50, 1.0);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 2px;
+    z-index: 1;
 }
 .animationBox {
     width: 90%;
+    background-image: url('space1.jpg');
+    background-repeat: repeat-y;
     animation-name: spaceBackground;
-    animation-duration: 3s;
+    animation-duration: 1000s;
     animation-iteration-count: infinite;
 }
 span {
@@ -27,7 +35,7 @@ span {
 
 /*STYLING ELEMENTS*/
 a {
-    font-size: 25px;
+    font-size: 0.8em;
     color: black;
     font-family: "Lucida Console";
     font-weight: bold;
@@ -39,33 +47,389 @@ a:hover {
 }
 .ship {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 5%;
+    left: 70%;
     margin: auto;
     
     width: 95px;
     height: 95px;
-    background-image: url('galagaShip.png');
-    background-size: cover;
+    
+    animation-name: spaceShip;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.shipImage {
+    animation-name: shipFly;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.bee {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    margin: auto;
+    
+    width: 68px;
+    height: 64px;
+    background-image: url('galagaBee.png');
+    
+    animation-name: bee;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.kongInvader {
+    position: absolute;
+    bottom: 0%;
+    left: 70%;
+    margin: auto;
+    
+    width: 106px;
+    height: 102px;
+    
+    animation-name: kongInvader;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.kongInvader img {
+    position: absolute;
+    margin: auto;
+    
+    width: 106px;
+    height: 102px;
+}
+.kongInvader1 {
+    animation-name: kongInvader1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.kongInvader2 {
+    animation-name: kongInvader2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.kongInvader3 {
+    animation-name: kongInvader3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.barrel {
+    position: absolute;
+    bottom: 0%;
+    left: 70%;
+    margin: auto;
+    
+    width: 41px;
+    height: 32px;
+    background-image: url('barrel.png');
+    
+    animation-name: barrel;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.pacman1 {
+    position: absolute;
+    bottom: 5%;
+    left: 70%;
+    margin: auto;
+    
+    width: 330px;
+    height: 60px;
+    
+    animation-name: pacman1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.pacman2 {
+    position: absolute;
+    bottom: 5%;
+    left: 70%;
+    margin: auto;
+    
+    width: 330px;
+    height: 60px;
+    
+    animation-name: pacman2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.pacman1 img{
+    position: absolute;
+    margin: auto;
+}
+.pacman2 img{
+    position: absolute;
+    margin: auto;
+}
+.chase2 {
+    animation-name: chase2;
+    animation-duration: 0.15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.chase4 {
+    animation-name: chase2;
+    animation-duration: 0.15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 
 /*ANIMATIONS*/
 @keyframes spaceBackground {
-  0% {
-    background-image: url('space1.jpg');
-  }
-  33% {
-    background-image: url('space2.jpg');
-  }
-  66% {
-    background-image: url('space3.jpg');
-  }
-  100% {
-    background-image: url('space1.jpg');
-  }
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 0px 200000px;
+    }
 }
+
+
 @keyframes spaceShip {
-    
+    0% {
+        transform: translate(0px, 0px);
+    }
+    2% {
+        transform: translate(0px, 0px);
+    }
+    3% {
+        transform: translate(-30vw, 0px);
+    }
+    5.0% {
+        transform: translate(0px, 0px);
+    }
+    5.4% {
+        transform: translate(-35vw, 0px);
+    }
+    36% {
+        transform: translate(-35vw, 0px);
+    }
+    37% {
+        transform: translate(-15vw, 0px);
+    }
+    45% {
+        transform: translate(-15vw, 0px);
+    }
+    47% {
+        transform: translate(-20vw, -30vh);
+    }
+    54% {
+        transform: translate(-20vw, -30vh);
+    }
+    55% {
+        transform: translate(-20vw, -30vh) rotate(90deg);
+    }
+    57% {
+        transform: translate(-20vw, -30vh) rotate(90deg);
+    }
+    60% {
+        transform: translate(-20vw, 0px);
+    }
+    95% {
+        transform: translate(-20vw, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+
+@keyframes shipFly {
+    0% {
+        transform: translate(0px, 5px);
+    }
+    50% {
+        transform: translate(0px, -5px);
+    }
+    100% {
+        transform: translate(0px, 5px); 
+    }
+}
+
+
+@keyframes bee {
+    0% {
+        transform: translate(0px, -80px);
+    }
+    4.2% {
+        transform: translate(0px, 40vh);
+    }
+    4.6% {
+        transform: translate(-10vh, 50vh) rotate(90deg);
+    }
+    5.0% {
+        transform: translate(-20vh, 40vh) rotate(180deg);
+    }
+    5.4% {
+        transform: translate(-10vh, 30vh) rotate(270deg);
+    }
+    5.8% {
+        transform: translate(0px, 40vh) rotate(360deg);
+    }
+    10.0%, 100% {
+        transform: translate(0px, 150vh);
+    }
+}
+
+
+@keyframes kongInvader {
+    0% {
+        transform: translate(0px, 130px);
+    }
+    13% {
+        transform: translate(0px, 130px);
+    }
+    20% {
+        transform: translate(0px, -50vh);
+    }
+    30% {
+        transform: translate(0px, -50vh);
+    }
+    32% {
+        transform: translate(-30vw, -50vh);
+    }
+    40% {
+        transform: translate(-30vw, -50vh);
+    }
+    50% {
+        transform: translate(100vw, -50vh);
+    }
+    100% {
+        transform: translate(100vw, -50vh);
+    }
+}
+@keyframes kongInvader1 {
+    0% {
+        opacity: 1;
+    }
+    34.5% {
+        opacity: 1;
+    }
+    34.7% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes kongInvader2 {
+    0% {
+        opacity: 0;
+    }
+    34.5% {
+        opacity: 0;
+    }
+    34.7% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    40.2% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes kongInvader3 {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    40.2% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes barrel {
+    0% {
+        transform: translate(0px, 130px);
+    }
+    0.5% {
+        opacity: 0;
+    }
+    13% {
+        transform: translate(0px, 130px);
+    }
+    20% {
+        transform: translate(0px, -50vh);
+    }
+    30% {
+        transform: translate(0px, -50vh);
+    }
+    32% {
+        transform: translate(-30vw, -50vh);
+    }
+    34.5% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    35.5% {
+        transform: translate(-30vw, -50vh);
+    }
+    40% {
+        transform: translate(-30vw, 130px);
+    }
+    100% {
+        transform: translate(-30vw, 130px);
+    }
+}
+
+
+@keyframes chase2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes pacman1 {
+    0% {
+        transform: translate(200px, -30vh);
+    }
+    58% {
+        transform: translate(200px, -30vh);
+    }
+    68% {
+        transform: translate(-150vw, -30vh);
+    }
+    100% {
+        transform: translate(-150vw, -30vh);
+    }
+}
+@keyframes pacman2 {
+    0% {
+        transform: translate(-150vw, -70vh);
+    }
+    73% {
+        transform: translate(-150vw, -70vh);
+    }
+    83% {
+        transform: translate(200px, -70vh);
+    }
+    100% {
+        transform: translate(200px, -70vh);
+    }
 }
