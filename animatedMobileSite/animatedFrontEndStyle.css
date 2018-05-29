@@ -52,8 +52,8 @@ a:hover {
     left: 70%;
     margin: auto;
     
-    width: 95px;
-    height: 95px;
+    width: 20vh;
+    height: 20vh;
     
     animation-name: spaceShip;
     animation-duration: 18s;
@@ -61,6 +61,9 @@ a:hover {
     animation-timing-function: linear;
 }
 .shipImage {
+    width: 20vh;
+    height: 20vh;
+    
     animation-name: shipFly;
     animation-duration: 1s;
     animation-iteration-count: infinite;
