@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding: 2px;
     z-index: 1;
 }
@@ -30,12 +31,13 @@ body {
 span {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
 /*STYLING ELEMENTS*/
 a {
-    font-size: 0.8em;
+    font-size: 1.8em;
     color: black;
     font-family: "Lucida Console";
     font-weight: bold;
@@ -262,19 +264,19 @@ a:hover {
         transform: translate(0px, -80px);
     }
     4.2% {
-        transform: translate(0px, 40vh);
+        transform: translate(0px, 30vh);
     }
     4.6% {
-        transform: translate(-10vh, 50vh) rotate(90deg);
+        transform: translate(-10vh, 40vh) rotate(90deg);
     }
     5.0% {
-        transform: translate(-20vh, 40vh) rotate(180deg);
+        transform: translate(-20vh, 30vh) rotate(180deg);
     }
     5.4% {
-        transform: translate(-10vh, 30vh) rotate(270deg);
+        transform: translate(-10vh, 20vh) rotate(270deg);
     }
     5.8% {
-        transform: translate(0px, 40vh) rotate(360deg);
+        transform: translate(0px, 30vh) rotate(360deg);
     }
     10.0%, 100% {
         transform: translate(0px, 150vh);
@@ -421,15 +423,15 @@ a:hover {
 }
 @keyframes pacman2 {
     0% {
-        transform: translate(-150vw, -70vh);
+        transform: translate(-150vw, -60vh);
     }
     73% {
-        transform: translate(-150vw, -70vh);
+        transform: translate(-150vw, -60vh);
     }
     83% {
-        transform: translate(200px, -70vh);
+        transform: translate(200px, -60vh);
     }
     100% {
-        transform: translate(200px, -70vh);
+        transform: translate(200px, -60vh);
     }
 }
