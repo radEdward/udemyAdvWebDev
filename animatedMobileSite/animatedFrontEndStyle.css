@@ -18,7 +18,7 @@ body {
     display: flex;
 }
 .menuBar {
-    background-color: rgba(0, 150, 50, 1.0);
+    background-color: rgba(0, 250, 50, 1.0);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,14 +50,17 @@ a {
     margin: 10px;
 }
 a:hover {
-    color: lightgray;
+    color: rgba(220, 0, 220, 1.0);
+}
+a:checked {
+    color: rgba(220, 0, 220, 1.0);
 }
 .textBox {
     position: relative;
     top: 5%;
     left: 0%;
     right: 0%;
-    color: white;
+    color: rgba(250, 0, 250, 1.0);
     margin: auto;
     
     font-family: "Lazer 84";
@@ -76,8 +79,8 @@ a:hover {
     left: 70%;
     margin: auto;
     
-    width: 20vh;
-    height: 20vh;
+    width: 15vh;
+    height: 15vh;
     
     animation-name: spaceShip;
     animation-duration: 18s;
@@ -85,8 +88,8 @@ a:hover {
     animation-timing-function: linear;
 }
 .shipImage {
-    width: 20vh;
-    height: 20vh;
+    width: 15vh;
+    height: 15vh;
     
     animation-name: shipFly;
     animation-duration: 1s;
@@ -99,8 +102,8 @@ a:hover {
     left: 70%;
     margin: auto;
     
-    width: 16vh;
-    height: 16vh;
+    width: 12vh;
+    height: 12vh;
     background-image: url('galagaBee.png');
     background-size: contain;
     
@@ -229,20 +232,6 @@ a:hover {
         background-position: 0px 200000px;
     }
 }
-@keyframes logo {
-    0% {
-        color: red;
-    }
-    33% {
-        color: yellow;
-    }
-    66% {
-        color: pink;
-    }
-    100% {
-        color: red;
-    }
-}
 
 
 @keyframes spaceShip {
@@ -283,9 +272,21 @@ a:hover {
         transform: translate(-20vw, -30vh) rotate(90deg);
     }
     60% {
+        transform: translate(-20vw, -60vh);
+    }
+    70% {
+        transform: translate(-20vw, -60vh);
+    }
+    72% {
+        transform: translate(-20vw, -60vh) rotate(-90deg);
+    }
+    73% {
+        transform: translate(-20vw, -60vh) rotate(-90deg);
+    }
+    75% {
         transform: translate(-20vw, 0px);
     }
-    95% {
+    97% {
         transform: translate(-20vw, 0px);
     }
     100% {
