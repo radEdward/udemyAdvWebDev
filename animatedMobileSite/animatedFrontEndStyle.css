@@ -334,10 +334,10 @@ a:hover {
 
 @keyframes kongInvader {
     0% {
-        transform: translate(0px, 130px);
+        transform: translate(0px, 160px);
     }
     13% {
-        transform: translate(0px, 130px);
+        transform: translate(0px, 160px);
     }
     20% {
         transform: translate(0px, -50vh);
@@ -463,18 +463,18 @@ a:hover {
         transform: translate(200px, -30vh);
     }
     68% {
-        transform: translate(-150vw, -30vh);
+        transform: translate(-200vw, -30vh);
     }
     100% {
-        transform: translate(-150vw, -30vh);
+        transform: translate(-200vw, -30vh);
     }
 }
 @keyframes pacman2 {
     0% {
-        transform: translate(-150vw, -60vh);
+        transform: translate(-200vw, -60vh);
     }
     73% {
-        transform: translate(-150vw, -60vh);
+        transform: translate(-200vw, -60vh);
     }
     83% {
         transform: translate(200px, -60vh);
