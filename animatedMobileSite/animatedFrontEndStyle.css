@@ -64,7 +64,7 @@ a:checked {
     margin: auto;
     
     font-family: "Lazer 84";
-    font-size: 30px;
+    font-size: 2.0em;
     z-index: 1;
     transform: skewY(-5deg);
     
@@ -272,18 +272,18 @@ a:checked {
         transform: translate(-20vw, -30vh) rotate(90deg);
     }
     60% {
-        transform: translate(-20vw, -60vh);
-    }
-    70% {
-        transform: translate(-20vw, -60vh);
-    }
-    72% {
-        transform: translate(-20vw, -60vh) rotate(-90deg);
-    }
-    73% {
-        transform: translate(-20vw, -60vh) rotate(-90deg);
+        transform: translate(-20vw, -55vh);
     }
     75% {
+        transform: translate(-20vw, -55vh);
+    }
+    77% {
+        transform: translate(-20vw, -55vh) rotate(-90deg);
+    }
+    78% {
+        transform: translate(-20vw, -55vh) rotate(-90deg);
+    }
+    80% {
         transform: translate(-20vw, 0px);
     }
     97% {
@@ -341,22 +341,22 @@ a:checked {
         transform: translate(0px, 160px);
     }
     20% {
-        transform: translate(0px, -50vh);
+        transform: translate(0px, -45vh);
     }
     30% {
-        transform: translate(0px, -50vh);
+        transform: translate(0px, -45vh);
     }
     32% {
-        transform: translate(-30vw, -50vh);
+        transform: translate(-30vw, -45vh);
     }
     40% {
-        transform: translate(-30vw, -50vh);
+        transform: translate(-30vw, -45vh);
     }
     50% {
-        transform: translate(100vw, -50vh);
+        transform: translate(100vw, -45vh);
     }
     100% {
-        transform: translate(100vw, -50vh);
+        transform: translate(100vw, -45vh);
     }
 }
 @keyframes kongInvader1 {
@@ -463,7 +463,7 @@ a:checked {
     58% {
         transform: translate(200px, -30vh);
     }
-    68% {
+    72% {
         transform: translate(-200vw, -30vh);
     }
     100% {
@@ -472,15 +472,15 @@ a:checked {
 }
 @keyframes pacman2 {
     0% {
-        transform: translate(-200vw, -60vh);
+        transform: translate(-200vw, -55vh);
     }
-    73% {
-        transform: translate(-200vw, -60vh);
+    77% {
+        transform: translate(-200vw, -55vh);
     }
-    83% {
-        transform: translate(200px, -60vh);
+    93% {
+        transform: translate(200px, -55vh);
     }
     100% {
-        transform: translate(200px, -60vh);
+        transform: translate(200px, -55vh);
     }
 }
