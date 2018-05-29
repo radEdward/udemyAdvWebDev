@@ -27,7 +27,7 @@ body {
     z-index: 2;
 }
 .animationBox {
-    width: 90%;
+    width: 100%;
     background-image: url('space1.jpg');
     background-repeat: repeat-y;
     animation-name: spaceBackground;
