@@ -264,19 +264,19 @@ a:hover {
         transform: translate(0px, -80px);
     }
     4.2% {
-        transform: translate(0px, 30vh);
+        transform: translate(0px, 25vh);
     }
     4.6% {
-        transform: translate(-10vh, 40vh) rotate(90deg);
+        transform: translate(-10vh, 35vh) rotate(90deg);
     }
     5.0% {
-        transform: translate(-20vh, 30vh) rotate(180deg);
+        transform: translate(-20vh, 25vh) rotate(180deg);
     }
     5.4% {
-        transform: translate(-10vh, 20vh) rotate(270deg);
+        transform: translate(-10vh, 15vh) rotate(270deg);
     }
     5.8% {
-        transform: translate(0px, 30vh) rotate(360deg);
+        transform: translate(0px, 25vh) rotate(360deg);
     }
     10.0%, 100% {
         transform: translate(0px, 150vh);
