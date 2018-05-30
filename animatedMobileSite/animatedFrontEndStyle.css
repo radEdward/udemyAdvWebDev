@@ -30,6 +30,7 @@ body {
     width: 100%;
     background-image: url('space1.jpg');
     background-repeat: repeat-y;
+    background-size: cover;
     animation-name: spaceBackground;
     animation-duration: 1000s;
     animation-iteration-count: infinite;
@@ -272,16 +273,16 @@ a:checked {
         transform: translate(-20vw, -30vh) rotate(90deg);
     }
     60% {
-        transform: translate(-20vw, -55vh);
+        transform: translate(-20vw, -50vh);
     }
     75% {
-        transform: translate(-20vw, -55vh);
+        transform: translate(-20vw, -50vh);
     }
     77% {
-        transform: translate(-20vw, -55vh) rotate(-90deg);
+        transform: translate(-20vw, -50vh) rotate(-90deg);
     }
     78% {
-        transform: translate(-20vw, -55vh) rotate(-90deg);
+        transform: translate(-20vw, -50vh) rotate(-90deg);
     }
     80% {
         transform: translate(-20vw, 0px);
@@ -472,15 +473,15 @@ a:checked {
 }
 @keyframes pacman2 {
     0% {
-        transform: translate(-200vw, -55vh);
+        transform: translate(-200vw, -50vh);
     }
     77% {
-        transform: translate(-200vw, -55vh);
+        transform: translate(-200vw, -50vh);
     }
     93% {
-        transform: translate(200px, -55vh);
+        transform: translate(200px, -50vh);
     }
     100% {
-        transform: translate(200px, -55vh);
+        transform: translate(200px, -50vh);
     }
 }
