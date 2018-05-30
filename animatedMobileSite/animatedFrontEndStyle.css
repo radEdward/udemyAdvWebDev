@@ -66,9 +66,9 @@ a:checked {
     margin: auto;
     
     font-family: "Lazer 84";
-    font-size: 2.0em;
+    font-size: 1.5em;
     z-index: 1;
-    transform: skewY(-5deg);
+    transform: skewY(-3deg);
     
     animation-name: logo;
     animation-duration: 0.5s;
