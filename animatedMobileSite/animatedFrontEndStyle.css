@@ -34,6 +34,7 @@ body {
     animation-name: spaceBackground;
     animation-duration: 1000s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 span {
     display: flex;
