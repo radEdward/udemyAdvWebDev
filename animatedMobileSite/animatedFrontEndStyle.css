@@ -336,10 +336,10 @@ a:checked {
 
 @keyframes kongInvader {
     0% {
-        transform: translate(0px, 160px);
+        transform: translate(0px, 180px);
     }
     13% {
-        transform: translate(0px, 160px);
+        transform: translate(0px, 180px);
     }
     20% {
         transform: translate(0px, -45vh);
